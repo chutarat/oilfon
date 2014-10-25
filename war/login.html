@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Chumphon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css"> 
+    <script src="phonegap.js"></script> 
+     </head>
+     
+        <body id="main">
+        
+        
+        <div style="background-color:white">
+        
+        <header id="container">
+		             <img id="imgheader" src = "images/za.jpg" width="100%" height="200">
+		   </header>
+        
+        <div class="navbar  navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"
+                            data-toggle="collapse" 
+                            data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    	        	
+                    <a class="navbar-brand"> </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                       
+                        <li ><a href="index.jsp"><img src="images/paper.png" width="25" height="25" >&nbsp;หน้าแรก</span></a></li>
+                         
+                         <li><a><img src="images/car.png" width="25" height="25" >&nbsp;สถานที่ท่องเที่ยว</a></li>
+                         
+                         <li><a><img src="images/resort.png" width="25" height="25" >&nbsp;ที่พัก</span></a></li>
+                             
+                         <li><a><img src="images/kung.png" width="25" height="25" >&nbsp;ร้านอาหาร</span></a></li>
+                                         
+                        <li><a href="about-Us.html"><img src="images/girl.png" width="25" height="25" >&nbsp;ผู้จัดทำ</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+      
+            
+              
+
+        <form method="get" action="chklogin.jsp">
+
+        <center><div class="ui-field-contain">
+            <h2 class="form-signin-heading">กรุณากรอกข้อมูล</h2>
+          <label for="username">ชื่อผู้ใช้ :&nbsp;&nbsp;</label>
+          <input type="text" name="username" id="username" size="30" placeholder="ชื่อผู้ใช้?">
+        </div></center>
+        <center><div class="ui-field-contain">
+          <label for="password">รหัสผ่าน :&nbsp;</label>
+          <input type="password" name="password" id="passwprd" size="30" placeholder="รหัสผ่าน?">
+        </div></center>
+        <center><button type="submit" class="btn btn-primary" data-inline="true">ลงชื่อเข้าใช้</button></center>
+        
+      </form>
+      
+      
+
+      <footer id="footerlogin"><br>
+                <center>
+                <a href="index.html"><img src="images/paper.png" width="25" height="25" >&nbsp;หน้าแรก</a> |
+                <a href="about-Us.html"><img src="images/car.png" width="25" height="25" >&nbsp;สถานที่ท่องเที่ยว</a> |
+                <a href="recommend.html"><img src="images/resort.png" width="25" height="25" >&nbsp;ที่พัก</span></a> |
+                <a href="recommend.html"><img src="images/kung.png" width="25" height="25" >&nbsp;ร้านอาหาร</span></a> |
+                <a href="about-Us.html"><img src="images/girl.png" width="25" height="25" >&nbsp;ผู้จัดทำ</span></a><br>
+
+<hr>
+                เว็บไซด์นี้ใช้ประกอบการเรียนวิชาโครงสร้างและการออกแบบเว็บ
+                จัดทำโดยนักศึกษามหาวิทยาลัยหอการค้าไทย
+                </center> 
+         </footer>  
+
+          
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $(".tool").tooltip();
+            });
+            
+        </script>
+        
+        </div>
+
+    </body>
+</html>
