@@ -1,3 +1,2 @@
 # Module chumphon
 # RPC service class, partial path of RPC policy file
-th.ac.utcc.client.GreetingService, 7F07C7D140E08FA315B0484ADD482E2D.gwt.rpc
