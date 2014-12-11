@@ -17,6 +17,7 @@
         
         <center>
 		             <img id="container"src = "images/king2.jpg" >
+		             <marquee behavior="scroll" scrolldelay="100" id="scroll"><div id="result"></div></marquee>
 		             	   
         </center>
         <center><br><p><a class="btn btn-primary btn-lg" href="tour.jsp" role="button">ยินดีต้อนรับเข้าสู่เว็บไซด์</a></p></center>

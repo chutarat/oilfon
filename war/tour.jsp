@@ -68,9 +68,10 @@
        
         
 <section id="tour">
-<br><br>
+<br>
+<center><font color ="#00008B"><h3>สถานที่ท่องเที่ยวแนะนำ</h3><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></center><br><br>
 <div id="resource"></div>
-
+     
 </section>
         
         

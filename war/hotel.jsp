@@ -65,9 +65,10 @@
         </div>
        
 <section id="tour">
-<br><br>
+<br>
+<center><font color ="#00008B"><h3>ที่พักแนะนำ</h3><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></center><br><br>
 <div id="resource"></div>
-
+     
 </section>
         
         
