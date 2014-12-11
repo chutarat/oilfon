@@ -1,11 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" import="java.sql.*" errorPage="" %>
 <% request.setCharacterEncoding("UTF-8");%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Chumphon</title>
@@ -25,7 +21,7 @@ and open the template in the editor.
 		             <img id="imgheader" src = "images/123.jpg" width="100%" height="200">
 		   </header>
 
-        <div class="navbar  navbar-inverse">
+         <div "navbar navbar-default navbar-static-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle"
@@ -45,9 +41,9 @@ and open the template in the editor.
                          
                          <li><a href="tour.jsp"><img src="images/car.png" width="25" height="25" >&nbsp;สถานที่ท่องเที่ยว</a></li>
                          
-                         <li><a><img src="images/resort.png" width="25" height="25" >&nbsp;ที่พัก</span></a></li>
+                         <li><a href="hotel.jsp"><img src="images/resort.png" width="25" height="25" >&nbsp;ที่พัก</span></a></li>
                              
-                         <li><a><img src="images/kung.png" width="25" height="25" >&nbsp;ร้านอาหาร</span></a></li>
+                         <li><a href="restaurant.jsp"><img src="images/kung.png" width="25" height="25" >&nbsp;ร้านอาหาร</span></a></li>
                                          
                         <li><a href="about-Us.html"><img src="images/girl.png" width="25" height="25" >&nbsp;ผู้จัดทำ</span></a></li>
                         </ul>
@@ -70,7 +66,7 @@ and open the template in the editor.
             </div>
         </div>
        
-        <marquee behavior="scroll" scrolldelay="100" id="scroll"><div id="result"></div></marquee>
+        
 <section id="tour">
 <br><br>
 <div id="resource"></div>
@@ -78,22 +74,19 @@ and open the template in the editor.
 </section>
         
         
-        
-       
-    
-
-     
-         <footer id="footerlogin"><br>
+        <hr>
+         <div class="footerlogin">
                 <center>
-                <a href="index.html"><img src="images/paper.png" width="25" height="25" >&nbsp;หน้าแรก</a> |
+                <a href="index.jsp"><img src="images/paper.png" width="25" height="25" >&nbsp;หน้าแรก</a> |
                 <a href="tour.jsp"><img src="images/car.png" width="25" height="25" >&nbsp;สถานที่ท่องเที่ยว</a> |
-                <a href="recommend.html"><img src="images/resort.png" width="25" height="25" >&nbsp;ที่พัก</span></a> |
-                <a href="recommend.html"><img src="images/kung.png" width="25" height="25" >&nbsp;ร้านอาหาร</span></a> |
+                <a href="hotel.jsp"><img src="images/resort.png" width="25" height="25" >&nbsp;ที่พัก</span></a> |
+                <a href="restaurant.jsp"><img src="images/kung.png" width="25" height="25" >&nbsp;ร้านอาหาร</span></a> |
                 <a href="about-Us.html"><img src="images/girl.png" width="25" height="25" >&nbsp;ผู้จัดทำ</span></a><br> 
-          <hr>
+           </div> 
+          <footer id="footer"> <center>
           เว็บไซด์นี้ใช้ประกอบการเรียนวิชาโครงสร้างและการออกแบบเว็บจัดทำโดยนักศึกษามหาวิทยาลัยหอการค้าไทย
-                 </center>
-          </footer>
+                </center>
+          </footer> 
           
    </div>
           
@@ -123,6 +116,8 @@ and open the template in the editor.
 $(document).ready(function() {
 var text = '{"tour":['
 + '{"img":"34.jpg","head":"เกาะมาตรา","message":"เกาะมาตรา เกาะมัตรา หรืออีกชื่อคือเกาะตังกวย อยู่ในพื้นที่อุทยานแห่งชาติหมู่เกาะชุมพร ใกล้กับหาดทรายรีเป็นที่ตั้งของหน่วยพิทักษ์อุทยานฯ มีหาดทรายขาวสลับกับโขดหินสามารถไปตั้งเต็นท์พักแรม และมีบ้านพักของอุทยานฯบริเวณหัวแหลมของเกาะมีแนวปะการังน้ำตื้น เช่นปะการังเขากวางและดอกไม้ทะเลกิจกรรมการท่องเที่ยวของเกาะมาตราคือการดำน้ำชมปะการัง ดูหอยมือเสือและชมปูไก่ซึ่งชอบปีนต้นไม้และส่งเสียงร้องเหมือนลูกไก่" },'
++ '{"img":"ju.jpg","head":"อุทยานแห่งชาติหมู่เกาะชุมพร","message":"อุทยานแห่งชาติหมู่เกาะชุมพร เป็นแหล่งท่องเที่ยวทางทะเลที่โดดเด่นมากอีกแห่งหนึ่ง เหมาะสำหรับผู้รักทะเล และชอบดำน้ำชมปะการัง มีเกาะเรียงรายมากกว่า 40 เกาะ แต่ละเกาะล้วนเต็มไปด้วยความงดงาม ของธรรมชาติ แตกต่างกัน บางเกาะมีหาดทรายขาวละเอียด บางเกาะ เป็นภูเขาหินปูนที่มีรูปทรงแปลกตาน่าชม รอบเกาะ ยังคงเต็ม ไปด้วยแนวปะการังสมบูรณ์ เกาะที่นิยมไปเที่ยวกันมีประมาณเจ็ดแปดเกาะ เช่น เกาะง่ามใหญ่ เกาะง่ามน้อย เกาะทะลุ" },'
++ '{"img":"dang.jpg","head":"หาดผาแดง","message":"หาดผาแดง ห่างจากหาดภราดรภาพไปประมาณ 2 กม. เป็นสถานที่ท่องเที่ยวที่แปลกตาแห่งหนึ่ง คือ เป็นหน้าผาดินแดงสูงประมาณ 10 เมตร สามารถนั่งชมทะเลเกาะแก่ง และหาดทรายได้ หาดทราย ด้านล่าวประกอบด้วยหินชนิดต่าง ๆ ที่สวยงาม และมีสถานที่พักไว้บริการแก่นักท่องเที่ยวด้วย" },'
 + '{"img":"vv.jpg","head":"ศาลเสด็จกรมหลงชุมพร","message":"สด็จในกรมฯ ได้เสด็จออกจากกรุงเทพฯ เมื่อวันที่ ๒๑ เมษายน พ.ศ. ๒๔๖๖ เสด็จในกรมฯ ได้เสด็จไปประทับ อยู่ที่ด้านใต้ปากน้ำ เมืองชุมพรซึ่งเป็นที่เสด็จในกรมฯ ทรงจองไว้จะทำสวน ขณะที่เสด็จในกรมฯ ประทับอยู่ที่จังหวัดชุมพรนี้ ก็เกิดเป็นพระโรคหวัดใหญ่ เนื่องจากถูกฝน ทรงประชวรอยู่เพียง ๓ วันก็สิ้นพระชนม์ที่ ตำบลทรายรี ในวันที่ ๑๙ พฤษภาคม พ.ศ. ๒๔๖๖ สิริพระชนมายุได้ ๔๔ พรรษา" },'
 + '{"img":"vvv.jpg","head":"หาดทุ่งวัวแล่น","message":"เป็นแหล่งท่องเที่ยวที่มีชื่อเสียงมากที่สุดของอำเภอนี้ ตั้งอยู่ที่ตำบลสะพลีห่างจากตัวจังหวัดชุมพรไปตามถนนลาดยางสายชุมพร-หาดทุ่งวัวแล่น ระยะทางประมาณ 16 กม.อยู่ทางตอนใต้สุดของ อำเภอปะทิว เป็นชายหาดที่มีเม็ดทรายสีขาวนวลละเอียด ลักษณะหาดค่อย ๆ ลาดเอียงลงทีละน้อยจึงเป็นที่นิยมของนักท่องเที่ย วทั้งชาวไทยวและชาวต่างประเทศมากแห่งหนึ่ง" }]}';
 
